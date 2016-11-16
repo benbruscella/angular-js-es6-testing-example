@@ -1,11 +1,13 @@
-export function routing($urlRouterProvider, $stateProvider) {
+export function routing($urlRouterProvider, $stateProvider, $locationProvider) {
 
-    $urlRouterProvider.otherwise('/feature-a');
+  $locationProvider.html5Mode(true);
 
-    $stateProvider
-        .state('app', {
-            abstract: true,
-            template: '<app-component></app-component>'
-        })
+  $urlRouterProvider.otherwise('/counter');
+
+  $stateProvider
+  .state('app', {
+      abstract: true,
+      template: '<app-component></app-component>'
+  })
 
 }

@@ -1,13 +1,13 @@
 import { assert } from 'chai';
 
-import SomeComponent from './some-component';
+import CounterComponent from './counter.component';
 
 let component;
 
-describe('SomeComponent', function() {
+describe('CounterComponent', function() {
 
     beforeEach(function() {
-        component = new SomeComponent();
+        component = new CounterComponent();
     });
 
     it('should start with default counter value = 20', function () {
@@ -15,7 +15,7 @@ describe('SomeComponent', function() {
     });
 
     it('should accept initial counter value as dependency', function () {
-        component = new SomeComponent(30);
+        component = new CounterComponent(30);
         assert.equal(component.counter, 30);
     });
 
