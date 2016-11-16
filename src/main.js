@@ -9,7 +9,7 @@ import angularAnimate from 'angular-animate';
 import angularUiBootstrap from 'angular-ui-bootstrap';
 
 // Modules
-import app     from './app';
+import home    from './home';
 import common  from './common';
 import counter from './counter';
 import todo    from './todo';
@@ -17,7 +17,7 @@ import todo    from './todo';
 angular.module('main', [
     angularAnimate,
     angularUiBootstrap,
-    app,
+    home,
     common,
     counter,
     todo

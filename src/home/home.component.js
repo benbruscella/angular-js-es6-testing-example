@@ -1,4 +1,4 @@
-export default class AppComponent {
+export default class HomeComponent {
 
   constructor() {
     this.name = 'Progressclaim';
