@@ -9,10 +9,10 @@ import angularAnimate from 'angular-animate';
 import angularUiBootstrap from 'angular-ui-bootstrap';
 
 // Modules
-import app from './app';
-import common from './common';
+import app     from './app';
+import common  from './common';
 import counter from './counter';
-import featureB from './feature-b/feature-b.module';
+import todo    from './todo';
 
 angular.module('main', [
     angularAnimate,
@@ -20,7 +20,7 @@ angular.module('main', [
     app,
     common,
     counter,
-    featureB
+    todo
 ]);
 
 angular.element(document).ready(() => {

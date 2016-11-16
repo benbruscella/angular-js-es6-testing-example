@@ -1,7 +1,7 @@
 import { assert } from 'chai';
 
-import TodoComponent from './todo-component.js';
-import TodoService from '../services/todo.service.js';
+import TodoComponent from './todo.component.js';
+import TodoService from './todo.service.js';
 
 let component;
 
